@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/detailImageView"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/playerNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Name"
+        android:textColor="#CCCCCC" />
+
+    <TextView
+        android:id="@+id/levelDetailPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Level "
+        android:textColor="#CCCCCC" />
+
+    <TextView
+        android:id="@+id/scoreDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="Score "
+        android:textColor="#CCCCCC" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/back2"
+        android:text="Play !!"
+        android:textColor="#CCCCCC" />
+
+</LinearLayout>

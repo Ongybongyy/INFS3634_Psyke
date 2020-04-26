@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".LevelDetailFragment">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/nameView"
+        android:textColor="@color/accent_material_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/answersgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextQButton"
+        android:layout_alignStart="@+id/nameView"
+        android:layout_alignLeft="@+id/nameView"
+        android:layout_marginBottom="16dp"
+        android:clickable="true">
+        <!--android:layout-->
+        <!--android:checkedButton="@+id/radioButton"-->
+
+
+        <RadioButton
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="A"
+            android:textColor=" #cccccc" />
+
+        <RadioButton
+            android:id="@+id/a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="B"
+            android:textColor=" #cccccc" />
+
+        <RadioButton
+            android:id="@+id/a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="C"
+            android:textColor=" #cccccc" />
+
+        <RadioButton
+            android:id="@+id/a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="D"
+            android:textColor=" #cccccc" />
+
+        <RadioButton
+            android:id="@+id/a5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="E"
+            android:textColor=" #cccccc" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextQButton"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_above="@+id/buttonquit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back2"
+        android:text="Next Question"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonquit"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_above="@+id/timerQ"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back3"
+        android:text="Quit"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:text="Ready...Set..."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#CCCCCC" />
+
+
+    <TextView
+        android:id="@+id/scoreMath"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Your Score"
+        android:textAllCaps="false"
+        android:textColor="#CCCCCC"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="0"
+        android:textColor="#CCCCCC"
+        android:textSize="19dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scoreMath"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="45"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/timerQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="timer Sec"
+        android:textColor=" #cccccc" />
+
+</RelativeLayout>
